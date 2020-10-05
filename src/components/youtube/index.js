@@ -44,8 +44,8 @@ class Youtube extends Component {
             <h1>Résultats de la recherche</h1> 
             <Grid container spacing={2}>
             {list.items.map(element => (
-              <Grid item xs={3}>
-                  <VideoCard element={element} key={element.id.videoId} />
+              <Grid item xs={3}  key={element.id.videoId}>
+                  <VideoCard element={element}/>
                 </Grid>
             ))}
             </Grid>
